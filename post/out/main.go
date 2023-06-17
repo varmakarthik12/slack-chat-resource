@@ -17,6 +17,8 @@ func main() {
 		os.Exit(1)
 	}
 
+	// fmt
+
 	source_dir := os.Args[1]
 
 	var request utils.OutRequest
