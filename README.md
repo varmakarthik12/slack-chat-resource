@@ -7,7 +7,7 @@ There are two resource types:
 - `slack-read-resource`: For reading messages.
 - `slack-post-resource`: For posting messages.
 
-There are two resource types because a system does not want to respond to messages that it posts itself. Concourse assumes that an output of a resource is also a valid input. Therefore, separate resources are used for reading and posting. Since using a single resource has no benefits over separate resources, reading and posting are split into two resource types.
+There are two resource types because a system does not want to respond to messages that it posts itself. Concourse assumes that an output of a resource is also a valid input. Therefore, separate resources are used for reading and posting. Since using a single resource has no benefits over separate resources, reading and posting are split into two resource types..
 
 The posting resource offers similar functionality to the older
 [slack-notification-resource](https://github.com/cloudfoundry-community/slack-notification-resource),
