@@ -7,7 +7,7 @@ There are two resource types:
 - `slack-read-resource`: For reading messages.
 - `slack-post-resource`: For posting messages.
 
-There are two resource types because a system does not want to respond to messages that it posts itself. Concourse assumes that an output of a resource is also a valid input. Therefore, separate resources are used for reading and posting. Since using a single resource has no benefits over separate resources, reading and posting are split into two resource types.
+There are two resource types because a system does not want to respond to messages that it posts itself. Concourse assumes that an output of a resource is also a valid input. Therefore, separate resources are used for reading and posting. Since using a single resource has no benefits over separate resources, reading and posting are split into two resource types..
 
 The posting resource offers similar functionality to the older
 [slack-notification-resource](https://github.com/cloudfoundry-community/slack-notification-resource),
@@ -189,7 +189,7 @@ Consider a job with the `get: slack-in` step from the example above followed by 
       params:
         message:
             thread_ts: "{{slack-in/timestamp}}"
-            text: "Hi {{slack-in/text_part1}}! I will do {{slack-in/text_part2}} right away!"
+            text: "Hi {{slack-in/text_part1}}! I will do {{slack-in/text_part2}} right away!!"
 
 This will reply to the message read by the `get` step (since `thread` is the timestamp of the original message), and the reply will read:
 
