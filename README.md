@@ -189,7 +189,7 @@ Consider a job with the `get: slack-in` step from the example above followed by 
       params:
         message:
             thread_ts: "{{slack-in/timestamp}}"
-            text: "Hi {{slack-in/text_part1}}! I will do {{slack-in/text_part2}} right away!"
+            text: "Hi {{slack-in/text_part1}}! I will do {{slack-in/text_part2}} right away!!"
 
 This will reply to the message read by the `get` step (since `thread` is the timestamp of the original message), and the reply will read:
 
